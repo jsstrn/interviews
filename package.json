@@ -1,0 +1,25 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "👾 Algoritms for great good",
+  "main": "binarySearch.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsstrn/algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsstrn/algorithms/issues"
+  },
+  "homepage": "https://github.com/jsstrn/algorithms#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {}
+}
