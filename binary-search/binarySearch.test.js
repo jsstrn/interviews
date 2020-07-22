@@ -2,7 +2,7 @@ const counter = require("../counter");
 const binarySearch = require("./binarySearch");
 const { count } = require("console");
 
-describe("binarySearch()", () => {
+describe("Binary Search()", () => {
   it("returns 1 when item is found in the sorted list", () => {
     const sortedList = [...Array(64).keys()];
     expect(binarySearch(sortedList, 1)).toBe(1);
