@@ -1,8 +1,6 @@
 # algorithms
 
-👾 Algoritms for great good
-
-Coding exercises found in [Grokking algorithms by Aditya Bhargava](https://www.bookdepository.com/Grokking-Algorithms-Aditya-Y-Bhargava/9781617292231) and its companion [repository](https://github.com/egonSchiele/grokking_algorithms)
+Exercises found in [Grokking algorithms by Aditya Bhargava](https://www.bookdepository.com/Grokking-Algorithms-Aditya-Y-Bhargava/9781617292231) and its companion [repository](https://github.com/egonSchiele/grokking_algorithms).
 
 ## Run tests
 
@@ -18,7 +16,13 @@ Run all tests in watch mode
 npm run test:watch
 ```
 
-## Useful JavaScript snippets
+## Tips
+
+When writing unit tests there are usually three steps
+
+1. Arrange: set up your unit test
+2. Action: perform the operation
+3. Assert: make an assertion that should fail if criteria is not met
 
 Create a range of numbers starting from 0 to 9.
 
