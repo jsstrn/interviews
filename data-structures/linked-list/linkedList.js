@@ -1,3 +1,5 @@
+const Node = require("./node");
+
 class LinkedList {
   constructor() {
     this._size = 0;
@@ -12,8 +14,25 @@ class LinkedList {
     return this._head;
   }
 
-  add() {
-    // TODO Implement add() method
+  get tail() {
+    let pointer = this.head;
+    while (pointer && pointer.next !== null) {
+      pointer = pointer.next;
+    }
+    return pointer;
+  }
+
+  add(value) {
+    const node = new Node(value);
+
+    if (!this.head) {
+      this._head = node;
+      this._size += 1;
+      return;
+    }
+
+    this.tail._next = node;
+    this._size += 1;
   }
 
   remove() {
