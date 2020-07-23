@@ -1,7 +1,7 @@
 {
-  "name": "algorithms",
+  "name": "dsa",
   "version": "1.0.0",
-  "description": "👾 Algoritms for great good",
+  "description": "👾 Data structures and algoritms for great good",
   "main": "binarySearch.js",
   "scripts": {
     "test": "jest",

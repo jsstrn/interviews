@@ -1,4 +1,4 @@
-# algorithms
+# Data structures and algorithms
 
 Exercises found in [Grokking Algorithms by Aditya Bhargava](https://www.bookdepository.com/Grokking-Algorithms-Aditya-Y-Bhargava/9781617292231) and its companion [repository](https://github.com/egonSchiele/grokking_algorithms).
 
