@@ -1,67 +1,17 @@
 const Node = require("../node/node");
+const LinkedList = require("../linked-list/linkedList");
 
-class Queue {
+class Queue extends LinkedList {
   constructor() {
-    this._head = null;
-  }
-
-  get head() {
-    return this._head;
-  }
-
-  get size() {
-    if (this.isEmpty()) {
-      return 0;
-    }
-
-    let count = 1;
-    let pointer = this.head;
-
-    while (pointer && pointer.next !== null) {
-      count += 1;
-      pointer = pointer.next;
-    }
-
-    return count;
-  }
-
-  get tail() {
-    let pointer = this.head;
-
-    while (pointer && pointer.next !== null) {
-      pointer = pointer.next;
-    }
-
-    return pointer;
-  }
-
-  isEmpty() {
-    return !this.head;
+    super();
   }
 
   enqueue(value) {
-    const node = new Node(value);
-
-    if (this.isEmpty()) {
-      this._head = node;
-      return;
-    }
-
-    this.tail._next = node;
+    this.add(value);
   }
 
   dequeue() {
-    if (this.isEmpty()) {
-      return false;
-    }
-
-    if (this.head === this.tail) {
-      this._head = null;
-      return true;
-    }
-
-    this._head = this.head.next;
-    return true;
+    return this.remove();
   }
 }
 

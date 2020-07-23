@@ -1,26 +1,6 @@
 const Queue = require("./queue");
 
 describe("Queue", () => {
-  describe("init()", () => {
-    it("returns size as zero", () => {
-      const queue = new Queue();
-
-      expect(queue.size).toBe(0);
-    });
-
-    it("returns head as null", () => {
-      const queue = new Queue();
-
-      expect(queue.head).toBe(null);
-    });
-
-    it("returns tail as null", () => {
-      const queue = new Queue();
-
-      expect(queue.tail).toBe(null);
-    });
-  });
-
   describe("isEmpty()", () => {
     it("returns true when queue is empty", () => {
       const queue = new Queue();
