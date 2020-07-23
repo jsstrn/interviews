@@ -8,6 +8,10 @@ class Node {
     this._next = next;
   }
 
+  get id() {
+    return this._id;
+  }
+
   get value() {
     return this._value;
   }
