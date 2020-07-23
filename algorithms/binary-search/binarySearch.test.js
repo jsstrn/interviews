@@ -1,4 +1,4 @@
-const counter = require("../counter");
+const counter = require("../../counter");
 const binarySearch = require("./binarySearch");
 const { count } = require("console");
 
