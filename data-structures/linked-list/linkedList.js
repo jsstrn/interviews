@@ -1,4 +1,4 @@
-const Node = require("./node");
+const Node = require("../node/node");
 
 class LinkedList {
   constructor() {
@@ -33,10 +33,6 @@ class LinkedList {
 
     this.tail._next = node;
     this._size += 1;
-  }
-
-  remove() {
-    // TODO Implement remove() method
   }
 }
 

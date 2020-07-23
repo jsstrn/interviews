@@ -1,4 +1,4 @@
-const Node = require("./node");
+const Node = require("../node/node");
 const LinkedList = require("./linkedList");
 
 describe("Linked-List", () => {
@@ -56,7 +56,7 @@ describe("Linked-List", () => {
 
       expect(list.size).toBe(2);
       expect(list.head.value).toBe(11);
-      expect(list.head.next.value).toBe(22);
+      expect(list.tail.value).toBe(22);
     });
 
     it("adds three nodes to the linked-list", () => {
@@ -69,7 +69,7 @@ describe("Linked-List", () => {
       expect(list.size).toBe(3);
       expect(list.head.value).toBe(11);
       expect(list.head.next.value).toBe(22);
-      expect(list.head.next.next.value).toBe(33);
+      expect(list.tail.value).toBe(33);
     });
   });
 });
