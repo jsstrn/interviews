@@ -40,7 +40,7 @@ class Queue {
       return false;
     }
 
-    if (this.head && !this.head.next) {
+    if (this.head === this.tail) {
       this._head = null;
       this._size -= 1;
       return true;

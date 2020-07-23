@@ -73,9 +73,9 @@ describe("Queue", () => {
 
     it("points to the next node as the new head", () => {
       const queue = new Queue();
-
       queue.enqueue(11);
       queue.enqueue(22);
+
       queue.dequeue();
 
       expect(queue.head.value).toBe(22);
