@@ -21,6 +21,22 @@ describe("Queue", () => {
     });
   });
 
+  describe("isEmpty()", () => {
+    it("returns true when queue is empty", () => {
+      const queue = new Queue();
+
+      expect(queue.isEmpty()).toBe(true);
+    });
+
+    it("returns false when queue is not empty", () => {
+      const queue = new Queue();
+
+      queue.enqueue(11);
+
+      expect(queue.isEmpty()).toBe(false);
+    });
+  });
+
   describe("enqueue()", () => {
     it("adds a node to the queue", () => {
       const queue = new Queue();
