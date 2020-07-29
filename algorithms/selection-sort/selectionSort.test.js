@@ -12,4 +12,8 @@ describe("Selection Sort", () => {
   it("returns the sorted array [ 1, 3, 5, 7, 9 ]", () => {
     expect(selectionSort([9, 1, 5, 3, 7])).toEqual([1, 3, 5, 7, 9]);
   });
+
+  it("returns the sorted array [ 1, 3, 3, 3, 5, 7, 9 ]", () => {
+    expect(selectionSort([9, 1, 3, 5, 3, 3, 7])).toEqual([1, 3, 3, 3, 5, 7, 9]);
+  });
 });

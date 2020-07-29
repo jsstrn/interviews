@@ -14,8 +14,8 @@ const findLowestValue = (unsortedArray) => {
 };
 
 const selectionSort = (unsortedArray) => {
-  const unsortedArrayLength = unsortedArray.length;
   const sortedArray = [];
+  const unsortedArrayLength = unsortedArray.length;
 
   for (let i = 0; i < unsortedArrayLength; i++) {
     const [lowestValue, lowestValueIndex] = findLowestValue(unsortedArray);
