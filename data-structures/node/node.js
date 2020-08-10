@@ -1,6 +1,6 @@
 class Node {
   constructor(value = null, next = null) {
-    if (next !== null && !(next instanceof Node)) {
+    if (!this.isNullOrInstanceOfNode(next)) {
       throw new TypeError("Must be an instance of Node or null");
     }
 
@@ -18,6 +18,14 @@ class Node {
 
   get next() {
     return this._next;
+  }
+
+  isIstanceOfNode(next) {
+    return next instanceof Node;
+  }
+
+  isNullOrInstanceOfNode(next) {
+    return next === null || this.isIstanceOfNode(next);
   }
 }
 
